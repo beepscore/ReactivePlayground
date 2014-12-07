@@ -1,0 +1,427 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DEB95E4A1A35146F009D5002 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DEB95E491A35146F009D5002 /* main.m */; };
+		DEB95E4D1A35146F009D5002 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DEB95E4C1A35146F009D5002 /* AppDelegate.m */; };
+		DEB95E501A35146F009D5002 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DEB95E4F1A35146F009D5002 /* ViewController.m */; };
+		DEB95E531A35146F009D5002 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEB95E511A35146F009D5002 /* Main.storyboard */; };
+		DEB95E551A35146F009D5002 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEB95E541A35146F009D5002 /* Images.xcassets */; };
+		DEB95E581A35146F009D5002 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = DEB95E561A35146F009D5002 /* LaunchScreen.xib */; };
+		DEB95E641A351470009D5002 /* ReactivePlaygroundTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DEB95E631A351470009D5002 /* ReactivePlaygroundTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DEB95E5E1A351470009D5002 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DEB95E3C1A35146E009D5002 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DEB95E431A35146E009D5002;
+			remoteInfo = ReactivePlayground;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DEB95E441A35146E009D5002 /* ReactivePlayground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReactivePlayground.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DEB95E481A35146F009D5002 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DEB95E491A35146F009D5002 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DEB95E4B1A35146F009D5002 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		DEB95E4C1A35146F009D5002 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		DEB95E4E1A35146F009D5002 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		DEB95E4F1A35146F009D5002 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		DEB95E521A35146F009D5002 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DEB95E541A35146F009D5002 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		DEB95E571A35146F009D5002 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		DEB95E5D1A351470009D5002 /* ReactivePlaygroundTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReactivePlaygroundTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DEB95E621A351470009D5002 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DEB95E631A351470009D5002 /* ReactivePlaygroundTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReactivePlaygroundTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DEB95E411A35146E009D5002 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DEB95E5A1A351470009D5002 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DEB95E3B1A35146E009D5002 = {
+			isa = PBXGroup;
+			children = (
+				DEB95E461A35146F009D5002 /* ReactivePlayground */,
+				DEB95E601A351470009D5002 /* ReactivePlaygroundTests */,
+				DEB95E451A35146F009D5002 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DEB95E451A35146F009D5002 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DEB95E441A35146E009D5002 /* ReactivePlayground.app */,
+				DEB95E5D1A351470009D5002 /* ReactivePlaygroundTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DEB95E461A35146F009D5002 /* ReactivePlayground */ = {
+			isa = PBXGroup;
+			children = (
+				DEB95E4B1A35146F009D5002 /* AppDelegate.h */,
+				DEB95E4C1A35146F009D5002 /* AppDelegate.m */,
+				DEB95E4E1A35146F009D5002 /* ViewController.h */,
+				DEB95E4F1A35146F009D5002 /* ViewController.m */,
+				DEB95E511A35146F009D5002 /* Main.storyboard */,
+				DEB95E541A35146F009D5002 /* Images.xcassets */,
+				DEB95E561A35146F009D5002 /* LaunchScreen.xib */,
+				DEB95E471A35146F009D5002 /* Supporting Files */,
+			);
+			path = ReactivePlayground;
+			sourceTree = "<group>";
+		};
+		DEB95E471A35146F009D5002 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DEB95E481A35146F009D5002 /* Info.plist */,
+				DEB95E491A35146F009D5002 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DEB95E601A351470009D5002 /* ReactivePlaygroundTests */ = {
+			isa = PBXGroup;
+			children = (
+				DEB95E631A351470009D5002 /* ReactivePlaygroundTests.m */,
+				DEB95E611A351470009D5002 /* Supporting Files */,
+			);
+			path = ReactivePlaygroundTests;
+			sourceTree = "<group>";
+		};
+		DEB95E611A351470009D5002 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DEB95E621A351470009D5002 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DEB95E431A35146E009D5002 /* ReactivePlayground */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DEB95E671A351470009D5002 /* Build configuration list for PBXNativeTarget "ReactivePlayground" */;
+			buildPhases = (
+				DEB95E401A35146E009D5002 /* Sources */,
+				DEB95E411A35146E009D5002 /* Frameworks */,
+				DEB95E421A35146E009D5002 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ReactivePlayground;
+			productName = ReactivePlayground;
+			productReference = DEB95E441A35146E009D5002 /* ReactivePlayground.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DEB95E5C1A351470009D5002 /* ReactivePlaygroundTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DEB95E6A1A351470009D5002 /* Build configuration list for PBXNativeTarget "ReactivePlaygroundTests" */;
+			buildPhases = (
+				DEB95E591A351470009D5002 /* Sources */,
+				DEB95E5A1A351470009D5002 /* Frameworks */,
+				DEB95E5B1A351470009D5002 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DEB95E5F1A351470009D5002 /* PBXTargetDependency */,
+			);
+			name = ReactivePlaygroundTests;
+			productName = ReactivePlaygroundTests;
+			productReference = DEB95E5D1A351470009D5002 /* ReactivePlaygroundTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DEB95E3C1A35146E009D5002 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Beepscore LLC";
+				TargetAttributes = {
+					DEB95E431A35146E009D5002 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					DEB95E5C1A351470009D5002 = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = DEB95E431A35146E009D5002;
+					};
+				};
+			};
+			buildConfigurationList = DEB95E3F1A35146E009D5002 /* Build configuration list for PBXProject "ReactivePlayground" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DEB95E3B1A35146E009D5002;
+			productRefGroup = DEB95E451A35146F009D5002 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DEB95E431A35146E009D5002 /* ReactivePlayground */,
+				DEB95E5C1A351470009D5002 /* ReactivePlaygroundTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DEB95E421A35146E009D5002 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DEB95E531A35146F009D5002 /* Main.storyboard in Resources */,
+				DEB95E581A35146F009D5002 /* LaunchScreen.xib in Resources */,
+				DEB95E551A35146F009D5002 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DEB95E5B1A351470009D5002 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DEB95E401A35146E009D5002 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DEB95E501A35146F009D5002 /* ViewController.m in Sources */,
+				DEB95E4D1A35146F009D5002 /* AppDelegate.m in Sources */,
+				DEB95E4A1A35146F009D5002 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DEB95E591A351470009D5002 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DEB95E641A351470009D5002 /* ReactivePlaygroundTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DEB95E5F1A351470009D5002 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DEB95E431A35146E009D5002 /* ReactivePlayground */;
+			targetProxy = DEB95E5E1A351470009D5002 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DEB95E511A35146F009D5002 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DEB95E521A35146F009D5002 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DEB95E561A35146F009D5002 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DEB95E571A35146F009D5002 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DEB95E651A351470009D5002 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		DEB95E661A351470009D5002 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DEB95E681A351470009D5002 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ReactivePlayground/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		DEB95E691A351470009D5002 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ReactivePlayground/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		DEB95E6B1A351470009D5002 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ReactivePlaygroundTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ReactivePlayground.app/ReactivePlayground";
+			};
+			name = Debug;
+		};
+		DEB95E6C1A351470009D5002 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ReactivePlaygroundTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ReactivePlayground.app/ReactivePlayground";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DEB95E3F1A35146E009D5002 /* Build configuration list for PBXProject "ReactivePlayground" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DEB95E651A351470009D5002 /* Debug */,
+				DEB95E661A351470009D5002 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DEB95E671A351470009D5002 /* Build configuration list for PBXNativeTarget "ReactivePlayground" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DEB95E681A351470009D5002 /* Debug */,
+				DEB95E691A351470009D5002 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		DEB95E6A1A351470009D5002 /* Build configuration list for PBXNativeTarget "ReactivePlaygroundTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DEB95E6B1A351470009D5002 /* Debug */,
+				DEB95E6C1A351470009D5002 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DEB95E3C1A35146E009D5002 /* Project object */;
+}
