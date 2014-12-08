@@ -11,7 +11,9 @@
 @implementation RWDummySignInService
 
 
-- (void)signInWithUsername:(NSString *)username password:(NSString *)password complete:(RWSignInResponse)completeBlock {
+- (void)signInWithUsername:(NSString *)username
+                  password:(NSString *)password
+                  complete:(RWSignInResponse)completeBlock {
 
     double delayInSeconds = 2.0;
     dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(delayInSeconds * NSEC_PER_SEC));

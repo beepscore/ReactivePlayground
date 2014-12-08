@@ -12,6 +12,8 @@ typedef void (^RWSignInResponse)(BOOL);
 
 @interface RWDummySignInService : NSObject
 
-- (void)signInWithUsername:(NSString *)username password:(NSString *)password complete:(RWSignInResponse)completeBlock;
+- (void)signInWithUsername:(NSString *)username
+                  password:(NSString *)password
+                  complete:(RWSignInResponse)completeBlock;
 
 @end
