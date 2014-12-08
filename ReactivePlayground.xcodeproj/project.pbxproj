@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		DE1469831A351CE600A67AA1 /* RWDummySignInService.m in Sources */ = {isa = PBXBuildFile; fileRef = DE1469821A351CE600A67AA1 /* RWDummySignInService.m */; };
+		DE55AF971A3521F200A423AD /* kitten.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DE55AF961A3521F200A423AD /* kitten.jpg */; };
 		DEB95E4A1A35146F009D5002 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DEB95E491A35146F009D5002 /* main.m */; };
 		DEB95E4D1A35146F009D5002 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DEB95E4C1A35146F009D5002 /* AppDelegate.m */; };
 		DEB95E501A35146F009D5002 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DEB95E4F1A35146F009D5002 /* ViewController.m */; };
@@ -30,6 +31,7 @@
 /* Begin PBXFileReference section */
 		DE1469811A351CE600A67AA1 /* RWDummySignInService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWDummySignInService.h; sourceTree = "<group>"; };
 		DE1469821A351CE600A67AA1 /* RWDummySignInService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWDummySignInService.m; sourceTree = "<group>"; };
+		DE55AF961A3521F200A423AD /* kitten.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = kitten.jpg; sourceTree = "<group>"; };
 		DEB95E441A35146E009D5002 /* ReactivePlayground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReactivePlayground.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEB95E481A35146F009D5002 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DEB95E491A35146F009D5002 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -84,6 +86,7 @@
 		DEB95E461A35146F009D5002 /* ReactivePlayground */ = {
 			isa = PBXGroup;
 			children = (
+				DE55AF961A3521F200A423AD /* kitten.jpg */,
 				DEB95E4B1A35146F009D5002 /* AppDelegate.h */,
 				DEB95E4C1A35146F009D5002 /* AppDelegate.m */,
 				DE1469811A351CE600A67AA1 /* RWDummySignInService.h */,
@@ -204,6 +207,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE55AF971A3521F200A423AD /* kitten.jpg in Resources */,
 				DEB95E531A35146F009D5002 /* Main.storyboard in Resources */,
 				DEB95E581A35146F009D5002 /* LaunchScreen.xib in Resources */,
 				DEB95E551A35146F009D5002 /* Images.xcassets in Resources */,
