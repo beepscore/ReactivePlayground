@@ -54,13 +54,16 @@
     self.signInFailureText.hidden = YES;
 
     // sign in
+    // when signInWithUsername:password:complete: calls complete block
+    // it will supply argument success
     [self.signInService signInWithUsername:self.usernameTextField.text
                                   password:self.passwordTextField.text
                                   complete:^(BOOL success) {
                                       self.signInButton.enabled = YES;
                                       self.signInFailureText.hidden = success;
                                       if (success) {
-                                          [self performSegueWithIdentifier:@"signInSuccess" sender:self];
+                                          [self performSegueWithIdentifier:@"signInSuccess"
+                                                                    sender:self];
                                       }
                                   }];
 }
