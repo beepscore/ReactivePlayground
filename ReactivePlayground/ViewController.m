@@ -40,10 +40,15 @@
     // initially hide the failure message
     self.signInFailureText.hidden = YES;
 
-    // filter block parameter will always be a string, so use NSString *text instead of id value
-    [[self.usernameTextField.rac_textSignal filter:^BOOL(NSString *text) {
-        return (text.length > 3);
-    }]
+    // map block parameter will always be a string, so use NSString *text instead of id value
+    // map NSString *text to NSNumber *length
+    [[[self.usernameTextField.rac_textSignal
+       map:^id(NSString *text) {
+           return @(text.length);
+       }]
+      filter:^BOOL(NSNumber *length) {
+          return ([length integerValue] > 3);
+      }]
      subscribeNext:^(id x) {
          NSLog(@"%@", x);
      }];
