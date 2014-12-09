@@ -69,10 +69,15 @@
     }];
     
     // rac_signalForControlEvents emits a next event with the button as data.
+    // doNext block is a side effect, doesn't change the signal.
     // flattenMap converts button touch signal to sign in signal
     // and sends events from the inner signal to the outer signal
-    [[[self.signInButton
-       rac_signalForControlEvents:UIControlEventTouchUpInside]
+    [[[[self.signInButton
+        rac_signalForControlEvents:UIControlEventTouchUpInside]
+       doNext:^(id x) {
+           self.signInButton.enabled = NO;
+           self.signInFailureText.hidden = YES;
+       }]
       flattenMap:^id(id x) {
           return [self signInSignal];
       }]
