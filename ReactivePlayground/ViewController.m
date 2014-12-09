@@ -63,7 +63,7 @@
                           return @([usernameValid boolValue] &&
                           [passwordValid boolValue]);
                       }];
-
+    
     [signUpActiveSignal subscribeNext:^(NSNumber *signupActive) {
         self.signInButton.enabled = [signupActive boolValue];
     }];
@@ -76,8 +76,12 @@
       flattenMap:^id(id x) {
           return [self signInSignal];
       }]
-     subscribeNext:^(id x) {
-         NSLog(@"Sign in result: %@", x);
+     subscribeNext:^(NSNumber *signedIn) {
+         BOOL success = [signedIn boolValue];
+         self.signInFailureText.hidden = success;
+         if (success) {
+             [self performSegueWithIdentifier:@"signInSuccess" sender:self];
+         }
      }];
 }
 
