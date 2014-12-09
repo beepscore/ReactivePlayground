@@ -67,11 +67,13 @@
     [signUpActiveSignal subscribeNext:^(NSNumber *signupActive) {
         self.signInButton.enabled = [signupActive boolValue];
     }];
-
-    // map converts button touch signal to sign in signal
+    
+    // rac_signalForControlEvents emits a next event with the button as data.
+    // flattenMap converts button touch signal to sign in signal
+    // and sends events from the inner signal to the outer signal
     [[[self.signInButton
        rac_signalForControlEvents:UIControlEventTouchUpInside]
-      map:^id(id x) {
+      flattenMap:^id(id x) {
           return [self signInSignal];
       }]
      subscribeNext:^(id x) {
