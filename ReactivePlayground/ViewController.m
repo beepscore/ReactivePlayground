@@ -68,10 +68,14 @@
         self.signInButton.enabled = [signupActive boolValue];
     }];
 
-    [[self.signInButton
-      rac_signalForControlEvents:UIControlEventTouchUpInside]
+    // map converts button touch signal to sign in signal
+    [[[self.signInButton
+       rac_signalForControlEvents:UIControlEventTouchUpInside]
+      map:^id(id x) {
+          return [self signInSignal];
+      }]
      subscribeNext:^(id x) {
-         NSLog(@"button clicked");
+         NSLog(@"Sign in result: %@", x);
      }];
 }
 
@@ -83,24 +87,25 @@
     return password.length > 3;
 }
 
-- (IBAction)signInButtonTouched:(id)sender {
-    // disable all UI controls
-    self.signInButton.enabled = NO;
-    self.signInFailureText.hidden = YES;
+/**
+ * Wrap asynchronous api in a signal
+ @return a signal that signs in with current username and password
+ */
+- (RACSignal *)signInSignal {
 
-    // sign in
-    // when signInWithUsername:password:complete: calls complete block
-    // it will supply argument success
-    [self.signInService signInWithUsername:self.usernameTextField.text
-                                  password:self.passwordTextField.text
-                                  complete:^(BOOL success) {
-                                      self.signInButton.enabled = YES;
-                                      self.signInFailureText.hidden = success;
-                                      if (success) {
-                                          [self performSegueWithIdentifier:@"signInSuccess"
-                                                                    sender:self];
-                                      }
-                                  }];
+    // When this signal has a subscriber, getNext will execute the block
+    return [RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
+
+        // when signInWithUsername:password:complete: calls complete block
+        // it will supply argument success
+        [self.signInService signInWithUsername:self.usernameTextField.text
+                                      password:self.passwordTextField.text
+                                      complete:^(BOOL success) {
+                                          [subscriber sendNext:@(success)];
+                                          [subscriber sendCompleted];
+                                      }];
+        return nil;
+    }];
 }
 
 @end
